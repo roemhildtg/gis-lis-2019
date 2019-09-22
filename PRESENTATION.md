@@ -39,22 +39,14 @@ https://github.com/roemhildtg/
 
 ---
 
-![bg](#fff)
-![color](#123)
-# Composition of Workforce Projects
-
-![Workforce](./assets/Workforce.png)
-
----
-
  # Why Automate Workforce?
 
  - Reduce errors/provide consistency
- - Customize assignments
  - Save time
+ - Customize assignments
 
 ```python
-# create assignment due in 12 hours
+# Example of a custom assignment
 workforce.Assignment(
     description = f'{contact_name}, {contact_phone}',
     location = f'Inspection at {project_name} - Project #{project_number}', 
@@ -64,7 +56,14 @@ workforce.Assignment(
 ```
 ---
 
-## Development Process
+# Workforce Workflow
+
+![Workforce](./assets/Workforce.png?)
+
+
+---
+
+## Development Overview
 
 ![Process](./assets/Process.png)
 
@@ -72,6 +71,14 @@ workforce.Assignment(
 
 ## Python Process
 
+
+
+
+---
+# Requirements
+
+ - Python (Recommended: 3.x)
+ 
 
 
 ---
