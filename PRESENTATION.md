@@ -23,19 +23,9 @@ https://github.com/roemhildtg/
 
 # About Me
 
- - Web Developer @ WSB
+ - Web Developer @ [WSB](https://wsbeng.com)
  - Python, Javascript (NodeJS, ES6)
  - Web GIS (Workforce, Survey123, Enterprise, PostGIS)
-
----
-
-
-![bg](#123)
-![](#fff)
-
-# About You
-
-
 
 ---
 
@@ -43,7 +33,7 @@ https://github.com/roemhildtg/
 
  - Reduce errors/provide consistency
  - Save time
- - Customize assignments
+ - Standardize assignments data
 
 ```python
 # Example of a custom assignment
@@ -56,10 +46,51 @@ workforce.Assignment(
 ```
 ---
 
-# Workforce Workflow
+# Components
+ - Workforce for ArcGIS
+ - [Jupyter Notebooks](https://jupyter.org/), Python, & [ArcGIS Python API](https://developers.arcgis.com/python/)
+ - [Jenkins Automation Server](https://jenkins.io/)
+
+---
+
+
+# What is Workforce?
+
+Feature layers, Applications, and Integrations
 
 ![Workforce](./assets/Workforce.png?)
 
+---
+
+# Python and Jupyter Notebooks
+
+ - Exploratory python scripting
+ - Easy to document and explain
+ - Converts to executable python script
+ - ArcGIS Python API
+
+![Jupyter](./assets/jupyter.svg)
+
+---
+
+## Jupyter Alternatives:
+ - PyCharm
+ - VSCode
+ - ...
+
+## Script Language alternatives
+
+ - ArcGIS REST JS API (node)
+
+---
+
+![Jenkins](./assets/jenkins.jpg)
+
+ - Powerful task automation tool
+ - Free and open source
+ - Detailed logging
+ - Secure credentials
+ - Powerful scheduling
 
 ---
 
@@ -71,19 +102,18 @@ workforce.Assignment(
 
 ## Python Process
 
-
-
-
----
-# Requirements
-
- - Python (Recommended: 3.x)
- 
-
+![Python](./assets/Python.png)
 
 ---
+<!-- class: invert -->
 
-### <!--fit--> :ok_hand:
+Python Process 2
+
+![FilterLogic](./assets/FilterLogic.png?)
+
+---
+
+### <!--fit--> :question:
 
 ---
 
