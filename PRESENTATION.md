@@ -1,6 +1,6 @@
 ---
 marp: true
-title: Automating Workforce assignments with Python Notebooks and Jenkins Automation Server
+title: Automating Workforce with Python Notebooks and Jenkins Automation Server
 description: Hosting Marp slide deck on the web
 theme: uncover
 class:
@@ -17,7 +17,7 @@ _paginate: false
     }
 </style>
 
-# Automating Workforce assignments with Python Notebooks and Jenkins Automation Server
+# Automating Workforce with Python Notebooks and Jenkins Automation Server
 
 Presented By: Gregg Roemhildt
 https://github.com/roemhildtg/
@@ -149,17 +149,24 @@ img {
 # Development Tips
 
  * Use a virtual environment for all installed modules
- * Save dependencies to a `requirements.txt` file
+ * Save dependencies to a [`requirements.txt`](https://www.idkrtm.com/what-is-the-python-requirements-txt/) file
  * [Use `.env` files for all configuration parameters](https://preslav.me/2019/01/09/dotenv-files-python/)
  * Do not save credentials to your script files or repository
+
+requirements.txt:
+ ```
+arcgis==1.6.2.post1
+Shapely==1.6.4.post2
+environs==6.0.0
+ ```
 
 
 ---
 
 # Jenkins Tips
 
- * Use the question mark buttons
  * Don't be intimidated
+ * Use the question mark buttons
  * Read the docs
  * Check out the plugins
     * [Generic webhook plugin](https://wiki.jenkins-ci.org/display/JENKINS/Generic+Webhook+Trigger+Plugin)
@@ -175,11 +182,14 @@ img {
 # create our custom environment
 # packages we install will live here in development
 virtualenv env
+# *nix, git bash:
 source env/Scripts/activate
+# On windows instead run 
+.\env\Scripts\activate.bat
 
 # install any modules we need in our notebook
 #pip install <module name> <module name...>
-pip install environ Shapely
+pip install arcgis Shapely jupyter environs
 
 # run the notebook program
 jupyter notebook
@@ -224,6 +234,6 @@ groemhildt@wsbeng.com
 
 
 View this presentation at:
-https://github.com/roemhildtg/
+https://github.com/roemhildtg/gis-lis-2019
 
 [![WSB](./assets/wsb.svg)](https://wsbeng.com)
