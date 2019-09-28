@@ -9,13 +9,21 @@ class:
 paginate: true
 _paginate: false
 ---
+<style scoped>
+    img {
+        background: rgba(255, 255, 255, 0.5);
+        padding: 10px;
+        border-radius: 15%;
+    }
+</style>
 
 # Automating Workforce assignments with Python Notebooks and Jenkins Automation Server
 
 Presented By: Gregg Roemhildt
 https://github.com/roemhildtg/
 
-<style scoped>a { color: #eee; }</style>
+
+[![WSB](./assets/wsb.svg)](https://wsbeng.com)
 
 ---
 
@@ -206,15 +214,16 @@ jupyter notebook
 ### <!--fit--> :question:
 
 ---
+<!-- class: default  -->
 
-## Jupyter Alternatives:
- - PyCharm
- - VSCode
- - ...
+## Thank you!
 
-## Script Language alternatives
+Gregg Roemhildt
+groemhildt@wsbeng.com
 
- - ArcGIS REST JS API (node)
 
----
 
+View this presentation at:
+https://github.com/roemhildtg/
+
+[![WSB](./assets/wsb.svg)](https://wsbeng.com)
