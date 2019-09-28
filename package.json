@@ -5,10 +5,10 @@
   "license": "WTFPL",
   "private": true,
   "scripts": {
-    "build": "rimraf docs && npm run -s og-image && npm run -s deck",
-    "deck": "marp --no-stdin PRESENTATION.md -o docs/index.html && cpx \"assets/**/*\" docs/assets",
+    "build": "rimraf dist && npm run -s og-image && npm run -s deck",
+    "deck": "marp --no-stdin PRESENTATION.md -o dist/index.html && cpx \"assets/**/*\" dist/assets",
     "now-build": "npm run -s deck",
-    "og-image": "marp PRESENTATION.md -o docs/og-image.jpg",
+    "og-image": "marp PRESENTATION.md -o dist/og-image.jpg",
     "start": "marp -ps ."
   },
   "devDependencies": {
