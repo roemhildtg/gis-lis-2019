@@ -9,7 +9,10 @@
     "deck": "marp --no-stdin PRESENTATION.md -o dist/index.html && cpx \"assets/**/*\" dist/assets",
     "now-build": "npm run -s deck",
     "og-image": "marp PRESENTATION.md -o dist/og-image.jpg",
-    "start": "marp -ps ."
+    "start": "marp -ps .",
+    "pregh-pages": "git checkout gh-pages && git merge master",
+    "gh-pages": "npm run build",
+    "postgh-pages": "git add . && git commit -m \"update build\" && git push origin gh-pages"
   },
   "devDependencies": {
     "@marp-team/marp-cli": "^0.14.1",
