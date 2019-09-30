@@ -9,6 +9,12 @@ class:
 paginate: true
 _paginate: false
 ---
+<style>
+
+pre {
+    font-size: 20px;
+}
+</style>
 <style scoped>
     img {
         background: rgba(255, 255, 255, 0.5);
@@ -20,7 +26,7 @@ _paginate: false
 # Automating Workforce with Python Notebooks and Jenkins Automation Server
 
 Presented By: Gregg Roemhildt
-https://github.com/roemhildtg/
+https://github.com/roemhildtg/gis-lis-2019
 
 
 [![WSB](./assets/wsb.svg)](https://wsbeng.com)
@@ -46,10 +52,12 @@ Feature layers, Applications, and Integrations
  # Why Automate Workforce?
 
  * Save time
- * Reduce errors/provide consistency
- * Standardize assignments data
+ * Reduce errors
+ * Provide consistent assignments data
  * Our scenario: 
- * 300+ projects, Daily inspections, 100 + inspectors
+    * 300+ projects
+    * Daily inspections
+    * 100 + inspectors
 
 
 ---
@@ -61,9 +69,6 @@ Feature layers, Applications, and Integrations
 
 ---
 <style scoped>
-pre {
-    font-size: 20px;
-}
 img {
     position: absolute;
     top: 40px;
@@ -71,6 +76,7 @@ img {
     height: 100px;
 }
 </style>
+
 ![Jupyter](./assets/jupyter.svg)
 
 # Jupyter Notebooks 
@@ -79,15 +85,7 @@ img {
  * Easy to document and explain
  * Converts to executable python script
  * ArcGIS Python API
- * ```python
-        # Example of a custom assignment
-        workforce.Assignment(
-            description = f'{contact_name}, {contact_phone}',
-            location = f'Inspection at {project_name} - Project #{project_number}', 
-            due_date = today + datetime.timedelta(hours=12),
-            # .....
-        )
-        ```
+
 ---
 
 ![Jenkins](./assets/jenkins.jpg)
