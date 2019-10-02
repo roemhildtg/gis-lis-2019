@@ -1,0 +1,21 @@
+/* @theme wsb */
+
+@import 'uncover';
+
+section.tangerine {
+    background-color:#FCA93C;
+    color: #fff;
+}
+
+section.tangerine a {
+    color: #494945
+}
+
+section.invert {
+    background: #3D3935;
+    background-image: url('../assets/wsb_logo_white.png');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position-x: 1%;
+    background-position-y: 99%;
+}
