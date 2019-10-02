@@ -2,24 +2,21 @@
 marp: true
 title: Automating Workforce with Python Notebooks and Jenkins Automation Server
 description: Hosting Marp slide deck on the web
-theme: uncover
-class:
-    - lead
-    - invert
+theme: wsb
 paginate: true
 _paginate: false
----
-<style>
 
-pre {
-    font-size: 20px;
-}
+---
+<!-- class: tangerine -->
+<style>
+    pre {
+        font-size: 20px;
+    }
 </style>
 <style scoped>
     img {
-        background: rgba(255, 255, 255, 0.5);
-        padding: 10px;
-        border-radius: 15%;
+        width: 100px;
+        float: right;
     }
 </style>
 
@@ -28,10 +25,13 @@ pre {
 Presented By: Gregg Roemhildt
 https://github.com/roemhildtg/gis-lis-2019
 
+<br />
 
-[![WSB](./assets/wsb.svg)](https://wsbeng.com)
+[![WSB](./assets/wsb_logo_slate.png)](https://wsbeng.com)
+
 
 ---
+<!-- class: invert -->
 
 # About Me
 
@@ -41,39 +41,75 @@ https://github.com/roemhildtg/gis-lis-2019
 
 ---
 
-# What is Workforce?
+# Our scenario
+- 300+ projects
+- 100 + inspectors
+- Daily inspections
 
-Feature layers, Applications, and Integrations
+---
 
-![Workforce](./assets/Workforce.png?)
+### Project Spatial Database
+
+![Project1](./assets/project-form-1.png)
+
+---
+
+### Project Form
+
+![Project1](./assets/project-form.png)
 
 ---
 
  # Why Automate Workforce?
 
- * Save time
- * Reduce errors
- * Provide consistent assignments data
- * Our scenario: 
-    * 300+ projects
-    * Daily inspections
-    * 100 + inspectors
+ - Save time
+ - Reduce errors
+ - Provide consistent assignments data
+
+---
+
+# What is Workforce?
+
+Feature layers, Applications, and Integrations
+
+![Workforce](./assets/Workforce.png)
+
+---
+
+
+# Traditional Automation Approach
+
+ - Windows Task Scheduler
+ - Python/ArcGIS Desktop
+ - Usernames/Passwords in your script or environmental variables
+ 
+---
+
+![Windows password](./assets/windows-password.jpg)
+
+---
+
+# Issues
+
+ - Difficult to migrate and update
+ - Credential management is cumbersome
+ - No batteries included
 
 
 ---
 
-# Components
- * Workforce for ArcGIS
- * [Jupyter Notebooks](https://jupyter.org/), Python, & [ArcGIS Python API](https://developers.arcgis.com/python/)
- * [Jenkins Automation Server](https://jenkins.io/)
+# Web Centric Automation
+ - [Jupyter Notebooks](https://jupyter.org/)
+ - [ArcGIS Python API](https://developers.arcgis.com/python/)
+ - [Jenkins Automation Server](https://jenkins.io/)
 
 ---
 <style scoped>
 img {
     position: absolute;
-    top: 40px;
-    right: 100px;
-    height: 100px;
+    top: 40%;
+    right:15px;
+    height: 200px;
 }
 </style>
 
@@ -81,45 +117,35 @@ img {
 
 # Jupyter Notebooks 
 
- * Exploratory python scripting
- * Easy to document and explain
- * Converts to executable python script
- * ArcGIS Python API
+ - Exploratory python scripting
+ - Easy to document and explain
+ - Converts to executable python script
+ - ArcGIS Python API
 
 ---
 
+<style scoped>
+img {
+    position: absolute;
+    top: 60%;
+    right:15px;
+    width: 400px;
+}
+</style>
 ![Jenkins](./assets/jenkins.jpg)
 
- * Powerful task automation tool
- * Free and open source
- * Detailed logging
- * Secure credentials
- * Powerful scheduling
- * Email notifications
- * Automatic cleanup
- * Extendable with plugins
+# Jenkins
+
+ - Free and open source task automation server
+ - Detailed logging
+ - Secure credentials
+ - Powerful scheduling
+ - Email notifications
+ - Automatic cleanup
+ - Extendable with plugins
 
 ---
 
-## Jenkins in GIS
-
- * Build your apps
- * Publish services
- * Service Status Checks (are my services up?)
- * Automate tasks
-
----
-
-### When can tasks be run?
-
- * Manually
- * Run tasks on a trigger (webhook)
- * Run on a schedule
-    * Midnight
-    * Once every hour
-    * Once every hour at exactly 30 minute mark
-
----
 
 ## Development Overview
 
@@ -146,10 +172,10 @@ img {
 
 # Development Tips
 
- * Use a virtual environment for all installed modules
- * Save dependencies to a [`requirements.txt`](https://www.idkrtm.com/what-is-the-python-requirements-txt/) file
- * [Use `.env` files for all configuration parameters](https://preslav.me/2019/01/09/dotenv-files-python/)
- * Do not save credentials to your script files or repository
+ - Use a virtual environment for all installed modules
+ - Save dependencies to a [`requirements.txt`](https://www.idkrtm.com/what-is-the-python-requirements-txt/) file
+ - [Use `.env` files for all configuration parameters](https://preslav.me/2019/01/09/dotenv-files-python/)
+ - Do not save credentials to your script files or repository
 
 requirements.txt:
  ```
@@ -163,12 +189,12 @@ environs==6.0.0
 
 # Jenkins Tips
 
- * Don't be intimidated
- * Use the question mark buttons
- * Read the docs
- * Check out the plugins
-    * [Generic webhook plugin](https://wiki.jenkins-ci.org/display/JENKINS/Generic+Webhook+Trigger+Plugin)
-    * [ShiningPanda Plugin](https://wiki.jenkins.io/display/JENKINS/ShiningPanda+Plugin) - Automatically sets up virtual environments for your tasks
+ - Don't be intimidated
+ - Use the question mark buttons
+ - Read the docs
+ - Check out the plugins
+    - [Generic webhook plugin](https://wiki.jenkins-ci.org/display/JENKINS/Generic+Webhook+Trigger+Plugin)
+    - [ShiningPanda Plugin](https://wiki.jenkins.io/display/JENKINS/ShiningPanda+Plugin) - Automatically sets up virtual environments for your tasks
 
 ---
 
@@ -226,12 +252,11 @@ jupyter notebook
 
 ## Thank you!
 
-Gregg Roemhildt
-groemhildt@wsbeng.com
+Gregg Roemhildt - groemhildt@wsbeng.com
+
+![qrcode](./assets/qrcode.png)
+https://github.com/roemhildtg/gis-lis-2019/dist/
 
 
-
-View this presentation at:
-https://github.com/roemhildtg/gis-lis-2019
 
 [![WSB](./assets/wsb.svg)](https://wsbeng.com)
